@@ -111,6 +111,7 @@ services:
       - SPARK_SSL_ENABLED=no
     ports:
       - '8080:8080'
+      - "7077:7077"
     volumes:
       - ./:/home/workspace/
       - ./spark/jars:/opt/bitnami/spark/.ivy2 
@@ -128,7 +129,7 @@ services:
       - SPARK_SSL_ENABLED=no
     volumes:
       - ./:/home/workspace/
-      - ./spark/jars:/opt/bitnami/spark/.ivy2           
+      - ./spark/jars:/opt/bitnami/spark/.ivy2 
 
 
  
